@@ -1,0 +1,7 @@
+{
+  "name": "AI Photo Studio",
+  "description": "A mobile-optimized app for Shopify sellers to instantly enhance and refine product photos using text prompts powered by Google Gemini 2.5 Flash Image.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
