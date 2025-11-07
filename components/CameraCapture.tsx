@@ -257,7 +257,7 @@ const CameraCapture: React.FC<CameraCaptureProps> = ({ onImageCapture, onSwitchT
 
   return (
     <div className="relative w-screen h-screen bg-black flex flex-col justify-center items-center overflow-hidden">
-      {/* Top Control Bar */}
+      {/* Top Control Bar: Contains Moon, Flash, More Options. EV display removed as requested. */}
       <div className="absolute top-0 left-0 right-0 p-4 flex justify-end items-center z-20 bg-gradient-to-b from-black/60 to-transparent backdrop-blur-sm">
         {/* Right controls */}
         <div className="flex items-center space-x-2"> {/* Reduced space-x for tighter grouping like reference */}
@@ -340,7 +340,7 @@ const CameraCapture: React.FC<CameraCaptureProps> = ({ onImageCapture, onSwitchT
         ) : (
           <>
             <div className="flex items-center justify-between w-full max-w-lg mb-2">
-              {/* Left: Thumbnail/Gallery (for upload) */}
+              {/* Left: Thumbnail/Gallery button for switching to upload view (top-right image icon removed as requested). */}
               <button
                 onClick={onSwitchToUpload}
                 className="w-16 h-16 rounded-full bg-gray-700 overflow-hidden flex items-center justify-center border-2 border-white/30"
@@ -363,7 +363,7 @@ const CameraCapture: React.FC<CameraCaptureProps> = ({ onImageCapture, onSwitchT
               >
               </button>
 
-              {/* Right: Flip Camera */}
+              {/* Right: Flip Camera (video mode removed as requested) */}
               {(hasFrontCamera && hasRearCamera && !isProcessing) && (
                 <button
                   onClick={toggleFacingMode}
@@ -376,7 +376,7 @@ const CameraCapture: React.FC<CameraCaptureProps> = ({ onImageCapture, onSwitchT
               )}
             </div>
 
-            {/* Photo Mode Indicator (Simplified) */}
+            {/* Photo Mode Indicator (Simplified, video mode removed as requested) */}
             <div className="flex bg-white/20 backdrop-blur-sm rounded-full p-1 text-sm font-semibold mt-4">
                 <span className="px-4 py-2 text-white bg-white/30 rounded-full" aria-current="page" aria-label="Photo mode selected">PHOTO</span>
             </div>

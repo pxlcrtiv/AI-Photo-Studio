@@ -180,7 +180,7 @@ function App() {
       </main>
 
       <footer className="mt-8 text-center text-gray-500 text-sm">
-        <p>&copy; 2024 AI Photo Studio. Powered by Google Gemini.</p>
+        <p>&copy; 2025 AI Photo Studio. Powered by Google Gemini.</p>
       </footer>
     </div>
   );
